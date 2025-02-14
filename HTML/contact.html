@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/image/logo.png" type="image/png">
+    <title>mon_porfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="/CSS/sylle.css">
+    <link rel="stylesheet" href="/CSS/style1.css">
+    <link rel="stylesheet" href="/CSS/style-responsive.css">
+</head>
+<body>
+<div  class="container-fluid " id="globla-div">
+    <div class="div-nav">
+        <nav class="navbar  fixed-top">
+            <div class="container-fluid">
+                <div class="link">
+                    <a class="navbar-brand" style=" padding: 0;"href="#"><img  class="logo" src="/image/logo.png" alt="logo" title="accuiel"></a>
+                    <div class="div-link">
+                        <ul class="  ul-link ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Accueil </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Etude
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../HTML/EtudeBTS.html">BTS SIO</a></li>
+                                    <li><a class="dropdown-item" href="#">TAI</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../HTML/Projet.html">Projet</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../HTML/veille.html">veille techno</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../HTML/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button style="background-color: white;"  class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header"  >
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: white;" >Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: white; padding: 16px 16px 16px 0; " href="../index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; padding: 16px 16px 16px 0;">
+                                    Etude
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../HTML/EtudeBTS.html">BTS SIO</a></li>
+                                    <li><a class="dropdown-item" href="#">TAI</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: white; padding: 16px 16px 16px 0;" href="../HTML/Projet.html">project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: white; padding: 16px 16px 16px 0;" href="../HTML/veille.html">veille techno</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: white; padding: 16px 16px 16px 0;" href="../HTML/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+   <div class="main-contact">
+       <div class="form-container">
+           <div class="form-card1">
+               <div class="form-card2">
+                   <form class="form" action="/PHP/send_email.php" method="POST" onsubmit="return ">
+                       <p class="form-heading">Me Contacter </p>
+                       <div class="form-field">
+                           <input required name="name" placeholder="Name" class="input-field" type="text" />
+                       </div>
+
+                       <div class="form-field">
+                           <input required name="email" placeholder="Email" class="input-field" type="email"/>
+                       </div>
+
+                       <div class="form-field">
+                           <input required name="subject" placeholder="Subject" class="input-field" type="text"/>
+                       </div>
+                       <div class="form-field">
+                           <textarea required name="message" placeholder="Message" cols="30" rows="3" class="input-field"></textarea>
+                       </div>
+                       <button type="submit" class="sendMessage-btn">Send Message</button>
+                   </form>
+               </div>
+           </div>
+       </div>
+       <div class="compt1">
+           <a class=" compt-link" href="https://github.com/ciss5" target="_blank" >
+               <i class="fa-brands fa-github" style="width:25px;height: auto;"></i>
+               <span class="spanLink1">Github</span>
+           </a>
+           <a href="https://www.linkedin.com/in/mame-gor-ciss-6207a9227/" class=" compt-link" target="_blank" >
+               <i class="fa-brands fa-linkedin" style="width:25px;height: auto;" ></i>
+               <span class="spanLink1">Linkdin</span>
+           </a>
+           <a href="https://www.facebook.com/mamegor.ciss.5" class=" compt-link" target="_blank">
+               <i class="fa-brands fa-facebook" style="width:25px;height: auto;" ></i>
+               <span class="spanLink1">Facebook</span>
+           </a>
+           <a href="https://www.facebook.com/mamegor.ciss.5" class=" compt-link" target="_blank">
+               <i class="fa-brands fa-square-instagram" style="width:25px;height: auto; " ></i>
+               <span class="spanLink1">Instagram</span>
+           </a>
+       </div>
+   </div>
+</div>
+<footer class="bg-dark text-white text-center py-2">
+    <div class="containerFooter">
+        <p>&copy; <span id="year"></span> Mame Gor Ciss.
+            <span class="mention"><a href="../HTML/mention_legal.html" target="_blank">Mentions légales</a></span>
+            *Tous droits réservés.
+        </p>
+        <div class="social-links">
+            <a href="https://github.com/ciss5" class="text-white me-3" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mame-gor-ciss-6207a9227/" class="text-white me-3" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/mamegor.ciss.5" class="text-white me-3" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/mamegor.ciss?igsh=NzhzcW9yem5neTFn&utm_source=qr"  class="text-white" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="/JS/app.js"></script>
+<script src="https://kit.fontawesome.com/ab09c2f170.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

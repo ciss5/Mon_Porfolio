@@ -1,0 +1,70 @@
+#nav_article{
+    background-color: transparent;
+}
+.contenu_veille{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:58px
+}
+.presentation{
+    text-align: center;
+}
+.contenu_veille h3{
+    text-align: center;
+}
+.contenu_article section:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bloc_articles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.article_contenu{
+    display: flex;
+    flex-direction: column;
+    width: 318px;
+    margin: 10px;
+    box-shadow: 0 8px 20px #007bff;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.article_contenu h4,
+.article_contenu p{
+    color: #fff;
+}
+/****************************animation****************************/
+.article_contenu:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px #30cfd0
+}
+.contenu_veille .titre h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    font-family: "Courier New", Courier, monospace;
+    animation: typing 3s steps(30, end), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+/****************************responsives****************************/
+@media only screen and (max-width:768px){
+    .p-button button {
+        font-size: 13px;
+        padding: 14px;
+        width: 133px;
+    }
+}

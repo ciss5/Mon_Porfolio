@@ -1,0 +1,203 @@
+.main_projet{
+    display: flex;
+    flex-direction: column;
+}
+
+.titre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h2_projet{
+    text-transform:none;
+    padding: 0 69px;
+}
+.contenu_projet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.firstcontenu{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+.firstcontenu h3{
+   text-align: right;
+}
+.firstcontenu img{
+    width: 329px;
+    height: 329px;
+}
+.lastcontenu{
+    width: 36%;
+}
+.lastcontenu span{
+    color: white;
+    background-color:#007bff;
+    border: 1px solid;
+    padding: 9px;
+    border-radius:5px;
+    font-size: x-small;
+    font-weight:800;
+    font-family: "roboto", sans-serif;
+}
+.lastcontenu div{
+    margin: 24px 0;
+}
+.lastcontenu div p {
+    font-family: "roboto", sans-serif;
+    font-size: smaller;
+    font-weight:700;
+    color: white;
+}
+.p-button button {
+    color: white;
+    background-color: #007bff;
+    border: 1px solid;
+    padding: 9px;
+    border-radius:13px;
+    font-size: medium;
+    font-weight:bold;
+    font-family: "roboto", sans-serif;
+}
+.p-see_more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.p-see_more button{
+    color: white;
+    background-color: #007bff;
+    border: 1px solid;
+    padding: 9px;
+    border-radius:13px;
+    font-size: large;
+    font-weight:bold;
+    font-family: "roboto", sans-serif;
+}
+#my-hr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+hr {
+    background-color: white;
+    z-index: 10;
+    height: 5px;
+    border: 3px solid white;
+    animation: wave_hr 2s infinite;
+    width: 0;
+}
+@keyframes wave_hr {
+    0% { width: 0; }
+    50% { width:100%; }
+    100% { width: 0; }
+}
+.p-button a,
+.p-see_more a {
+    text-decoration: none;
+    color: white;
+}
+/***************************************** animations***********************************/
+/**pour le titre */
+.titre h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    font-family: "Courier New", Courier, monospace;
+    animation: typing 3s steps(30, end), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 15%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: white;
+    }
+}
+/******pour les contenu projet*******/
+.firstcontenu img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.firstcontenu img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+/******pour le bouton ******/
+.p-button button ,
+.p-see_more button{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.p-button button:hover,
+.p-see_more button:hover {
+    background-color:#00c3ff;
+    transform: scale(1.1);
+}
+/* Affichage vertical sur les écrans plus petits */
+@media only screen and (max-width: 768px) {
+    .contenu_projet {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firstcontenu img {
+        width: 205px;
+        height: 205px;
+    }
+
+    .lastcontenu {
+        width: 90%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .lastcontenu span {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .p-button button {
+        width: 120px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .titre h1 {
+        font-size: 1.5em;
+    }
+
+    .main_projet {
+        padding: 15px;
+    }
+
+    .lastcontenu div p {
+        font-size: 14px;
+    }
+    .p-button button {
+        font-size: 14px;
+        padding: 8px;
+        width: 120px;
+    }
+    .p-see_more button {
+        font-size: 15px;
+    }
+
+    .lastcontenu span {
+        font-size: 12px;
+        padding: 5px;
+    }
+}

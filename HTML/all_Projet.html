@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/image/logo.png" type="image/png">
+    <title>Mon_Porfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="/CSS/sylle.css">
+    <link rel="stylesheet" href="/CSS/style-responsive.css">
+    <link rel="stylesheet" href="/CSS/syle_bts.css">
+    <link rel="stylesheet" href="/CSS/style_projet.css">
+    <link rel="stylesheet" href="/CSS/all_Projet_style.css">
+</head>
+<body>
+<div class="container-fluid " id="globla-div">
+    <div class="div-nav">
+        <nav class="navbar  fixed-top">
+            <div class="container-fluid">
+                <div class="link">
+                    <a class="navbar-brand" style=" padding: 0;"href="#"><img  class="logo" src="/image/logo.png" alt="logo" title="accuiel"></a>
+                    <div class="div-link">
+                        <ul class="  ul-link ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Accueil </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Etude
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../HTML/EtudeBTS.html">BTS SIO</a></li>
+                                    <li><a class="dropdown-item" href="#">TAI</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../HTML/Projet.html">Projet</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../HTML/veille.html">veille techno</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../HTML/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button style="background-color: white;"  class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header"  >
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: white;" >Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: white; padding: 16px 16px 16px 0; " href="../index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; padding: 16px 16px 16px 0;">
+                                    Etude
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../HTML/EtudeBTS.html">BTS SIO</a></li>
+                                    <li><a class="dropdown-item" href="#">TAI</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: white; padding: 16px 16px 16px 0;" href="../HTML/Projet.html">project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: white; padding: 16px 16px 16px 0;" href="../HTML/veille.html">veille techno</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: white; padding: 16px 16px 16px 0;" href="../HTML/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main class="main_projet">
+        <div class="titre">
+            <h1>Projets</h1>
+        </div>
+        <div class="pClasse">
+            <h2 class="h2_projet">Projets Classe</h2>
+            <div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>Project Copycat</h3>
+                        <img src="/image/joom.jpg" title="project" alt="projet">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>HTML5</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>CSS</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>JavaScript</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>GIT</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans ce projet, j'ai recréé le site Joom.com pour améliorer mes compétences en développement web front-end. <br>L’objectif était de reproduire le design et
+                                certaines fonctionnalités du site tout en respectant les standards du développement web. J’ai utilisé HTML5, CSS3 et JavaScript pour implémenter les
+                                structures visuelles et interactives, tout en approfondissant ma compréhension des concepts de conception et d’ergonomie des interfaces utilisateur.
+                            </p>
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="https://ciss5.github.io/Copy_Cat_Joom/">voir le Projet</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>Puissance_4</h3>
+                        <img src="/image/puisance4.png" title="project" alt="projet">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>HTML5</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>CSS</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>JavaScript</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>GIT</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans ce projet, j'ai développé une version interactive du jeu Puissance 4 pour renforcer mes compétences en programmation et conception d'interfaces utilisateur.
+                                J'ai mis en pratique les principes du développement de jeux, en améliorant ma logique algorithmique et la gestion des interactions.<br>
+                                L'objectif était de reproduire les règles authentiques du jeu tout en créant une interface moderne.
+                                J'ai utilisé HTML5, CSS3 et JavaScript pour implémenter les fonctionnalités principales, comme la détection des alignements gagnants et la gestion des tours
+                            </p>
+
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="https://ciss5.github.io/Puissance_4/">voir le Projet</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>Jeux Chifoumi</h3>
+                        <img src="/image/chifoumi.png" title="project" alt="projet">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>HTML5</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>CSS</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>JavaScript</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>GIT</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans ce projet, j'ai développé un jeu interactif de Chifoumi (Pierre-Papier-Ciseaux) pour améliorer mes compétences en programmation et conception d’interfaces utilisateur.<br>
+                                J'ai appliqué des concepts de logique algorithmique et exploré l'interactivité et le design utilisateur.
+                                L'objectif était de créer une application dynamique qui respecte les règles du jeu tout en offrant une expérience fluide.
+                                J’ai utilisé JavaScript pour la logique, et HTML5 et CSS3 pour la structure et le design.
+                            </p>
+
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="https://ciss5.github.io/Chifoumi/">voir le Projet</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>Annimation CSS</h3>
+                        <img src="/image/annimation.png" title="project" alt="projet">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>HTML5</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>CSS</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>GIT</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans ce projet, j'ai développé une animation interactive en CSS afin d'améliorer mes compétences en design et animation web.
+                                J’ai exploré les transitions, transformations et animations CSS3 pour créer un rendu fluide et dynamique, tout en respectant les principes d'ergonomie et d'esthétique.<br>
+                                L'objectif était d'offrir une expérience visuelle engageante en exploitant les capacités de CSS sans utiliser JavaScript.
+                                J’ai structuré l’animation avec HTML5 et optimisé les styles pour assurer une compatibilité avec différents navigateurs.
+                            </p>
+
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="https://ciss5.github.io/Annimation_Css/">voir le Projet</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>Jeux Click_Run</h3>
+                        <img src="/image/click-run.png" title="project" alt="projet">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>HTML5</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>CSS</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>JavaScript</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>GIT</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans ce projet, j'ai développé un jeu interactif de Click & Run, où l'utilisateur doit cliquer le plus rapidement possible pour se mesurer à l'ordinateur.<br>
+                                L'objectif était d'améliorer mes compétences en programmation et interactivité web en appliquant des concepts de logique algorithmique et de gestion des événements utilisateur.
+                                J’ai utilisé JavaScript pour la logique du jeu, ainsi que HTML5 et CSS3 pour la structure et le design, afin d’offrir une expérience fluide et dynamique.
+                            </p>
+
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="https://ciss5.github.io/Click_Runner/">voir le Projet</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pClasse">
+            <h2 class="h2_projet">TP Classe</h2>
+            <div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>TP Stéganographie</h3>
+                        <img src="/image/img_tp/stegano.jpg" title="project" alt="projet" class="tp_mage">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>GIMP</span>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>word</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans le cadre de ce TP, j'ai exploré les techniques de stéganographie, un procédé permettant de dissimuler des informations au
+                                sein d'images numériques afin d'améliorer la confidentialité des données. Ce travail m'a permis de renforcer mes compétences en sécurité informatique
+                                et en traitement d’images, tout en appliquant des concepts clés liés à la cryptographie et à la dissimulation d’informations.
+                            </p>
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="/docs/fichier_tp/TP-N°1_Mame_Gor_Ciss.pdf">voir le TP</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>TP Kali Linux</h3>
+                        <img src="/image/img_tp/kali.jpg" title="project" alt="projet" class="tp_mage">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>VM</span>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>word</span>
+                            <span><i class="fa-regular fa-book fa-fade"></i>Cours</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans le cadre de ce TP, j'ai exploré l’importance de la sécurisation des machines sous Windows et Linux en adoptant la perspective d’un attaquant
+                                à l’aide de Kali Linux. Ce travail m’a permis de mieux comprendre les vulnérabilités des systèmes, les méthodes d’attaque courantes
+                                et les stratégies de défense essentielles pour assurer la protection des données et des infrastructures informatiques.
+                            </p>
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="/docs/fichier_tp/Mame_Gor_Ciss_TP5_Kali.pdf">voir le TP</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>TP Intrusion Windows</h3>
+                        <img src="/image/img_tp/instruction.jpg" title="project" alt="projet" class="tp_mage">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>VM</span>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>word</span>
+                            <span><i class="fa-regular fa-book fa-fade"></i>Cours</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans le cadre de ce TP, j'ai analysé et expérimenté des techniques d’intrusion basique sur Windows afin de mieux comprendre les vulnérabilités des systèmes d’exploitation et
+                                les bonnes pratiques en matière de sécurité informatique. Ce travail m'a permis de renforcer mes compétences en cybersécurité,
+                                en explorant les mécanismes d’authentification, de gestion des accès et les potentielles failles exploitées par des attaquants.
+                            </p>
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="/docs/fichier_tp/TP-N°2_Mame_Gor_Ciss.pdf">voir le TP</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>TP Decouvert Git</h3>
+                        <img src="/image/img_tp/git1.jpg" title="project" alt="projet" class="tp_mage">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>Git Bash</span>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>word</span>
+                            <span><i class="fa-regular fa-book fa-fade"></i>Cours</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans le cadre de ce TP, j'ai découvert et expérimenté l’utilisation de Git, un outil essentiel de gestion de version largement utilisé en développement
+                                logiciel. Ce travail m’a permis de comprendre les concepts fondamentaux du versionnement de code, de la collaboration en équipe et de la gestion des
+                                historiques de modifications.
+                            </p>
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="/docs/fichier_tp/TP4_Git_Mame_Gor_Ciss.pdf">voir le TP</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>TP Sur Les RAID</h3>
+                        <img src="/image/img_tp/Raid.jpg" title="project" alt="projet" class="tp_mage">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>VM</span>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>word</span>
+                            <span><i class="fa-brands fa-square-youtube fa-fade"></i>YouTube</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans le cadre de ce TP, j'ai appris à créer un RAID 5 avec trois disques, une technique permettant d'optimiser la tolérance aux pannes et les performances du
+                                stockage. Ce travail m'a permis de comprendre le fonctionnement du RAID (Redundant Array of Independent Disks), ainsi que ses avantages en matière
+                                de redondance et de sécurité des données.
+                            </p>
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="/docs/fichier_tp/Mame_Gor_Ciss_Exo7_RAID.pdf">voir le TP</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>TP Sur GLPI</h3>
+                        <img src="/image/img_tp/GLPI.jpg" title="project" alt="projet" class="tp_mage">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>VM</span>
+                            <span><i class="fa-brands fa-firefox fa-spin-pulse"></i>FireFox</span>
+                            <span><i class="fa-solid fa-globe fa-fade"></i>Internet</span>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>word</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans le cadre de ce TP, j'ai découvert et expérimenté l'utilisation de GLPI (Gestion Libre de Parc Informatique), un outil open-source permettant
+                                la gestion des tickets d’assistance et des ressources informatiques. Ce travail m’a permis de comprendre les principes de la gestion des incidents,
+                                du suivi des demandes et de l’optimisation du support IT au sein d’une organisation.
+                            </p>
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="/docs/fichier_tp/Mame_Gor_Ciss_2.pdf">voir le TP</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>TP Win Server GPO </h3>
+                        <img src="/image/img_tp/stratégie_de_group_GPO.jpg" title="project" alt="projet" class="tp_mage">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>VM</span>
+                            <span><i class="fa-solid fa-globe fa-fade"></i>Internet</span>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>word</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans le cadre de ce TP, j'ai appris à déployer un fond d’écran sur un parc informatique en utilisant les objets de stratégie de groupe (GPO) sous Windows.
+                                Ce travail m’a permis de comprendre le fonctionnement des GPO (Group Policy Objects) et leur rôle dans l’administration centralisée des configurations
+                                système au sein d’un réseau d’entreprise.
+                            </p>
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="/docs/fichier_tp/Mame_Gor_Ciss_Exo11_font_d'ecran.pdf">voir le TP</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>TP Consol FSRM
+                        </h3>
+                        <img src="/image/img_tp/FSRM.jpg" title="project" alt="projet" class="tp_mage">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>VM</span>
+                            <span><i class="fa-solid fa-globe fa-fade"></i>Internet</span>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>word</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans le cadre de ce TP, j'ai découvert et expérimenté l'utilisation de la console FSRM (File Server Resource Manager),
+                                un outil de gestion des ressources de stockage sous Windows Server. Ce travail m’a permis de comprendre comment contrôler,
+                                surveiller et optimiser l’utilisation de l’espace disque sur un serveur en appliquant des quotas, des filtres de fichiers et des rapports de stockage.
+                            </p>
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="/docs/fichier_tp/Mame_Gor_Ciss_Exo15_Control%20FSRM.pdf">voir le TP</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>TP Analyse </h3>
+                        <img src="/image/img_tp/Analyse.jpg.webp" title="project" alt="projet" class="tp_mage">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-solid fa-globe fa-fade"></i>Internet</span>
+                            <span><i class="fa-brands fa-uncharted fa-spin"></i>word</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans le cadre de ce TP, j'ai analysé une demande client, en tirant des conclusions sur les besoins spécifiques et en recherchant des solutions adaptées.
+                                Ce travail m’a permis de renforcer mes compétences en analyse des besoins et en gestion de projet, en passant par une phase de documentation et
+                                d'expérimentation d’une solution dans un environnement dédié.
+                            </p>
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="/docs/fichier_tp/TP6_Analyse_Mame_Gor_Ciss.pdf">voir le TP</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pClasse">
+            <h2 class="h2_projet">Projets Personnel</h2>
+            <div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>Calculatrice</h3>
+                        <img src="/image/Calculatrice.png" title="project" alt="projet">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>HTML5</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>CSS</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>JavaScript</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>GIT</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans ce projet, j'ai développé une calculatrice interactive, permettant d’effectuer des opérations mathématiques de base via une interface intuitive.<br>
+                                L'objectif était d'améliorer mes compétences en programmation et conception d’interfaces utilisateur, en appliquant des concepts de logique algorithmique et de gestion des événements.
+                                J’ai utilisé JavaScript pour la logique des calculs, ainsi que HTML5 et CSS3 pour structurer et styliser l’application, offrant ainsi une expérience fluide et ergonomique.
+                            </p>
+
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="https://ciss5.github.io/Calculatrice/">voir le Projet</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>Visual_Novel</h3>
+                        <img src="/image/visuelnovelle.png" title="project" alt="projet">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>HTML5</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>CSS</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>JavaScript</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>GIT</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans ce projet, j'ai co-développé un Visual Novel interactif avec un ami, où le joueur doit faire des choix stratégiques pour sauver le roi.
+                                Chaque décision influence le déroulement de l’histoire, menant à différents scénarios et à une issue victorieuse ou une défaite.<br>
+                                L’objectif était d’explorer la programmation narrative et de concevoir une expérience immersive grâce à un système de choix dynamiques.
+                                Nous avons utilisé JavaScript pour la logique du jeu et HTML5/CSS3 pour la structure et le design, afin de garantir une navigation fluide et engageante.
+                            </p>
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="https://ciss5.github.io/VIsuel_Novel/">voir le Projet</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pClasse">
+            <h2 class="h2_projet">Projets Professionnel </h2>
+            <div>
+                <div class="contenu_projet">
+                    <div class="firstcontenu">
+                        <h3>Project Copycat</h3>
+                        <img src="/image/Calculatrice.png" title="project" alt="projet">
+                    </div>
+                    <div class="lastcontenu">
+                        <div>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>HTML5</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>CSS</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>JavaScript</span>
+                            <span><i class="fa-regular fa-rectangle-terminal fa-fade"></i>GIT</span>
+                        </div>
+                        <div>
+                            <p>
+                                Dans le cadre de ce projet, j'ai entrepris la reproduction complète du site Joom.com, une plateforme internationale et populaire dédiée au commerce en ligne
+                                , afin de renforcer et perfectionner mes compétences en développement web front-end. Ce projet personnel visait non seulement à améliorer mes capacités techniques,
+                                mais aussi à approfondir ma compréhension des concepts fondamentaux de la conception et de l'ergonomie des interfaces utilisateur.<br>
+                                L'objectif principal consistait à recréer fidèlement le design et certaines fonctionnalités principales du site Joom,
+                                en respectant les standards actuels du développement web. J'ai soigneusement travaillé sur l'implémentation des structures visuelles et
+                                interactives en appliquant les meilleures pratiques associées aux technologies modernes telles que HTML5, CSS3, et JavaScript.
+                            </p>
+                        </div>
+                        <div class="p-button">
+                            <button>
+                                <a href="../index.html">voir le Projet</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</div>
+<footer class="bg-dark text-white text-center py-2">
+    <div class="containerFooter">
+        <p>&copy; <span id="year"></span> Mame Gor Ciss.
+            <span class="mention"><a href="../HTML/mention_legal.html" target="_blank">Mentions légales</a></span>
+            *Tous droits réservés.
+        </p>
+        <div class="social-links">
+            <a href="https://github.com/ciss5" class="text-white me-3" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mame-gor-ciss-6207a9227/" class="text-white me-3" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/mamegor.ciss.5" class="text-white me-3" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/mamegor.ciss?igsh=NzhzcW9yem5neTFn&utm_source=qr"  class="text-white" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/ab09c2f170.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="/JS/app.js"></script>
+</body>
+</html>

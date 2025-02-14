@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="image/logo.png" type="image/png">
+    <title>mon_porfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="CSS/sylle.css">
+    <link rel="stylesheet" href="CSS/style-responsive.css">
+</head>
+<body style=" padding-top: 70px">
+<div  class="container-fluid " id="globla-div">
+    <div class="div-nav">
+        <nav class="navbar  fixed-top">
+            <div class="container-fluid">
+                <div class="link">
+                    <a class="navbar-brand" style=" padding: 0;" href="#"><img  class="logo" src="image/logo.png" alt="logo" title="accuiel"></a>
+                    <div class="div-link">
+                        <ul class="  ul-link ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Accueil </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Etude
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="HTML/EtudeBTS.html">BTS SIO</a></li>
+                                    <li><a class="dropdown-item" href="#">TAI</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="HTML/Projet.html">Projet</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="HTML/veille.html">veille techno</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="HTML/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button style="background-color: white;"  class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header"  >
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: white;" >Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: white; padding: 16px 16px 16px 0; " href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; padding: 16px 16px 16px 0;">
+                                    Etude
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="HTML/EtudeBTS.html">BTS SIO</a></li>
+                                    <li><a class="dropdown-item" href="#">TAI</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: white; padding: 16px 16px 16px 0;" href="HTML/Projet.html">project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: white; padding: 16px 16px 16px 0;" href="HTML/veille.html">veille techno</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: white; padding: 16px 16px 16px 0;" href="HTML/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="main-content">
+        <div class="textcontenu">
+            <h1 class="name">mame gor ciss </h1>
+            <div class="div-text">
+                <p id="texte"></p>
+            </div>
+            <hr class="border border-white border-3 opacity-50">
+            <p class="description">Bonjour ! Je suis Mame Gor Ciss, étudiant en deuxieme  année de BTS Services Informatiques aux Organisations (SIO)
+                option Solutions Logicielles et Applications Métiers (SLAM)
+                au sein du campus MEWO.<br> Passionné par le monde du développement informatique,
+                je m'épanouis particulièrement dans la création d'applications web et mobiles.
+            </p>
+            <ul style="margin-top: 35px">
+                <li class="li">
+                    <i class="fa-solid fa-eye fa-beat-fade" style="color: #FFD43B;"></i>
+                    <a href="docs/cv-stage_v%20(1).pdf"> Télécharger mon cv</a>
+                </li>
+                <li class="li">
+                    <i class="fa-solid fa-eye fa-beat-fade" style="color: #FFD43B;"></i>
+                    <a href="##"> Mes Objectifs</a>
+                </li>
+            </ul>
+        </div>
+        <div class="selfphoto">
+            <div class="divphoto">
+                <img src="image/computer1.jpg" alt="profil" title="profil" class="photo rotate-fade">
+            </div>
+
+            <div class="compt">
+                <a class=" compt-link" href="https://github.com/ciss5" target="_blank">
+                    <i class="fa-brands fa-github" style="width:25px;height: auto;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mame-gor-ciss-6207a9227/" class=" compt-link" target="_blank" >
+                    <i class="fa-brands fa-linkedin" style="width:25px;height: auto;" ></i>
+                </a>
+                <a href="https://www.facebook.com/mamegor.ciss.5" class=" compt-link" target="_blank">
+                    <i class="fa-brands fa-facebook" style="width:25px;height: auto;" ></i>
+                </a>
+                <a href="https://www.instagram.com/mamegor.ciss?igsh=NzhzcW9yem5neTFn&utm_source=qr " class=" compt-link" target="_blank">
+                    <i class="fa-brands fa-square-instagram" style="width:25px;height: auto;" ></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="divcompetence">
+        <div class="title-comp">
+            <h2> mes compétences </h2>
+        </div>
+        <div class="separea">
+            <hr class="border border-white border-3 opacity-50">
+        </div>
+        <div class="container">
+            <div class="carousel">
+                <div class="carousel__face">
+                    <img  class="img-comp" src="image/lunix.png" title="image_lunix" alt="image">
+                </div>
+                <div class="carousel__face">
+                    <img  class="img-comp" src="image/office.png" title="image_office" alt="image">
+                </div>
+                <div class="carousel__face">
+                    <img   class="img-comp" src="image/windows.png" title="image_windows" alt="image">
+                </div>
+                <div class="carousel__face">
+                    <img  class="img-comp" src="image/js.png" title="image_js" alt="image">
+                </div>
+                <div class="carousel__face">
+                    <img  class="img-comp" src="image/angular.png" title="image_angular" alt="image">
+                </div>
+                <div class="carousel__face">
+                    <img  class="img-comp" src="image/php.png" title="image_php" alt="image">
+                </div>
+                <div class="carousel__face">
+                    <img  class="img-comp" src="image/css.png" title="image_css" alt="image">
+                </div>
+                <div class="carousel__face">
+                    <img  class="img-comp" src="image/lunix.png" title="image_lunix" alt="image">
+                </div>
+                <div class="carousel__face">
+                    <img   class="img-comp" src="image/sql.png" title="image_lunix" alt="image">
+                </div>
+                <div class="carousel__face">
+                    <img  class="img-comp" src="image/php.png" title="image_php" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divQualite">
+        <div class="title-comp">
+            <h2> mes Qualités </h2>
+        </div>
+        <div class="separea">
+            <hr class="border border-white border-3 opacity-50" id="hr">
+        </div>
+        <div class="img-quality">
+            <div class="items-quality">
+                <div class="description-quality">
+                    <h3>MindSet</h3>
+                </div>
+                <div class="img-container">
+                    <img class="img-q" src="image/mindset.jpg" title="image_mindset" alt="image">
+                </div>
+            </div>
+            <div class="items-quality">
+                <div class="description-quality">
+                    <h3>Curieux</h3>
+                </div>
+                <div class="img-container">
+                    <img class="img-q" src="image/curiousity.jpg" title="image_curieux" alt="image">
+                </div>
+            </div>
+            <div class="items-quality">
+                <div class="description-quality">
+                    <h3>Adaptable</h3>
+                </div>
+                <div class="img-container">
+                    <img class="img-q" src="image/adaptable1.jpg" title="image_adaptable" alt="image">
+                </div>
+            </div>
+            <div class="items-quality">
+                <div class="description-quality">
+                    <h3>Open Mind </h3>
+                </div>
+                <div class="img-container">
+                    <img class="img-q" src="image/open-mind.jpg" title="image_open_mind" alt="image">
+                </div>
+            </div>
+            <div class="items-quality">
+                <div class="description-quality">
+                    <h3> Créatif </h3>
+                </div>
+                <div class="img-container">
+                    <img class="img-q" src="image/creative.jpg" title="image_creative" alt="image">
+                </div>
+            </div>
+            <div class="items-quality">
+                <div class="description-quality">
+                    <h3>Persévérant</h3>
+                </div>
+                <div class="img-container">
+                    <img class="img-q" src="image/perseverance.jpg" title="image_perseverance" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divCertif">
+        <div class="title-comp">
+            <h2> mes certifications </h2>
+        </div>
+        <div class="separea">
+            <hr class="border border-white border-3 opacity-50">
+        </div>
+        <div class="items-certif">
+            <div class="global-certif">
+                <div class="img-certif">
+                    <img class="logo-certif" src="image/certification-secnum-anssi.jpg" title="image_anssi" alt="image" >
+                </div>
+                <div class="description-certif">
+                    <span class="span-certif">
+                        <a class="link-certif" href="docs/Certicat_SecuNum.pdf" target="_blank"><i class="fa-solid fa-eye fa-beat-fade" style="color: #FFD43B;"></i> voir le certificat</a>
+                     </span>
+                    <span class="span-certif">
+                       <a class="link-certif" href="https://secnumacademie.gouv.fr/" target="_blank">  <i class="fa-solid fa-eye fa-beat-fade" style="color: #FFD43B;"></i> le mooc de CNIL
+                       </a>
+                     </span>
+                </div>
+            </div>
+            <div class="global-certif">
+                <div class="img-certif">
+                    <img class="logo-certif" src="image/cnil_mooc_rgpd.jpg" title="image_rgpd" alt="image" >
+                </div>
+                <div class="description-certif">
+                    <span class="span-certif">
+                        <a class="link-certif" href="docs/Certificat_%201%202.pdf" target="_blank">  <i class="fa-solid fa-eye fa-beat-fade" style="color: #FFD43B;"></i> voir le certificat</a>
+                    </span>
+                    <span class="span-certif">
+                        <a class="link-certif" href="https://www.cnil.fr/fr/comprendre-le-rgpd" target="_blank">  <i class="fa-solid fa-eye fa-beat-fade" style="color: #FFD43B;"></i> le mooc de RGPD</a>
+                  </span>
+                </div>
+            </div>
+            <div class="global-certif">
+                <div class="img-certif">
+                    <img class="logo-certif " src="image/cyberP.jpg" title="image_cyberp" alt="image" >
+                </div>
+                <div class="description-certif">
+                    <span class="span-certif">
+                      <a class="link-certif" href="docs/Attestation%20Sens%20Cyber.pdf" target="_blank">  <i class="fa-solid fa-eye fa-beat-fade" style="color: #FFD43B;"></i> voir le certificat</a>
+                   </span>
+                    <span class="span-certif">
+                        <a class="link-certif" href="https://www.cybermalveillance.gouv.fr/" target="_blank">  <i class="fa-solid fa-eye fa-beat-fade" style="color: #FFD43B;"></i> le mooc de CYBER</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="bg-dark text-white text-center py-2">
+    <div class="containerFooter">
+        <p>&copy; <span id="year"></span> Mame Gor Ciss.
+            <span class="mention"><a href="HTML/mention_legal.html" target="_blank">Mentions légales</a></span>
+            *Tous droits réservés.
+        </p>
+        <div class="social-links">
+            <a href="https://github.com/ciss5" class="text-white me-3" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mame-gor-ciss-6207a9227/" class="text-white me-3" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/mamegor.ciss.5" class="text-white me-3" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/mamegor.ciss?igsh=NzhzcW9yem5neTFn&utm_source=qr"  class="text-white" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="JS/app.js"></script>
+<script src="https://kit.fontawesome.com/ab09c2f170.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

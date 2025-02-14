@@ -1,0 +1,195 @@
+
+body{
+    background-image: linear-gradient(to top, #30cfd0 0%, #210642 100%);
+}
+body>div{
+    position: relative;
+}
+.main_bts{
+    margin-bottom: 38px;
+}
+.backgranoud-bts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*box-shadow: 0px 80px 78px 1px #210642;
+    /*background-image: url(image/bts.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover; /* Fait en sorte que l'image couvre toute la zone */
+    background-position: center; /* Centre l'image */
+    width: 100%;
+    /*height: 404px; /* Définit la hauteur pour couvrir l'intégralité de la fenêtre */
+}
+.backgranoud-bts>div{
+
+}
+h1{
+    font-family: "roboto", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+.titre h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    font-family: "Courier New", Courier, monospace;
+    animation: typingg 5s steps(30, end), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typingg {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+article h2{
+    font-family: "roboto", sans-serif;
+    text-transform: uppercase;
+   margin-top: 50px;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+.presentation{
+    color: white;
+    font-family: "roboto", sans-serif;
+    margin: 10px;
+}
+.option{
+    display: flex;
+    color: white;
+    border: 10px solid #007bff;
+    font-family: "roboto", sans-serif;
+    padding: 21px
+}
+/**********************************Presentation_bts ********************************************/
+.bts_sio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+   /* background-image: url(./image/image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Fait en sorte que l'image couvre toute la zone */
+    /*background-position: center; /* Centre l'image */
+}
+.bts_sio >article{
+    width: 90%;
+}
+.bts_sio header{
+    width: 90%;
+}
+.bts_sio>article div{
+   display: flex;
+    flex-direction: row;
+    gap: 61px;
+    width: 100%;
+    /*border: 10px solid #007bff;*/
+}
+.option ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.option ul li:first-child{
+    list-style-type: none;
+}
+h1 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+/****************************************************************/
+.option {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.animation_text span {
+    animation: blinkText 1s infinite;
+}
+/************************************Responsives ********************************/
+/*Style pour les écrans larges */
+
+/*Tablettes (entre 768px et 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .bts_sio > article div {
+        flex-direction: column;
+    }
+    .option {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .div-link ul {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 767px) {
+    /* Ajustement de la taille de la police pour les titres */
+    h1 {
+        font-size: 32px;
+    }
+    article h2 {
+        font-size: 20px;
+    }
+    .presentation, .option {
+        font-size: 14px;
+    }
+
+    /* Navigation */
+    .div-link ul {
+        display: none; /* Cacher la barre de navigation horizontale sur petits écrans */
+    }
+    .navbar-toggler {
+        display: block; /* Afficher le bouton pour le menu déroulant */
+    }
+
+    /* Sections de contenu */
+    .bts_sio {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .bts_sio > article div {
+        flex-direction: column; /* Empiler les options sur les petits écrans */
+        gap: 10px;
+    }
+    .option {
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+    }
+
+    /* Pied de page */
+    footer p {
+        font-size: 14px;
+    }
+}
+
+/*  Petits appareils (moins de 480px) */
+@media (max-width: 480px) {
+    .animation_text {
+        font-size: 20px;
+    }
+    .bts_sio header h1 {
+        font-size: 28px;
+    }
+    .backgranoud-bts {
+        height: auto; /* Ajuster la hauteur pour les petits écrans */
+        padding: 20px;
+    }
+    .option {
+        padding: 10px;
+    }
+}
