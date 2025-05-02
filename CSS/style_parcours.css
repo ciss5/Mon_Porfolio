@@ -1,0 +1,148 @@
+/* BACKGROUND */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #30cfd0 0%, #210642 100%);
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: #f0f0f0;
+}
+
+/* CONTENEUR PRINCIPAL */
+.container-parcours {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* TITRES PRINCIPAUX */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #30cfd0;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* CARTES */
+.card-custom {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+    margin-bottom: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(48, 207, 208, 0.6);
+}
+
+/* BADGE DATE */
+.badge-date {
+    background: #30cfd0;
+    color: #210642;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* BOUTON PERSONNALISÉ */
+.btn-custom {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: transparent;
+    color: #30cfd0;
+    border: 2px solid #30cfd0;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+/* BOUTON DE TELECHARGEMENT */
+.btn-download {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #30cfd0;
+    color: #210642;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.btn-download:hover {
+    background-color: transparent;
+    border: 2px solid #30cfd0;
+    color: #30cfd0;
+}
+
+.btn-custom:hover {
+    background-color: #30cfd0;
+    color: #210642;
+}
+
+/* TEXTES DANS CARTES */
+.card-title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #d1d1d1;
+}
+
+.card-text {
+    color: #e0e0e0;
+    margin-top: 15px;
+}
+
+/* IMAGE LOGO */
+.img-fluid {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.4rem;
+    }
+    .container-parcours {
+        padding: 30px 10px;
+    }
+}
