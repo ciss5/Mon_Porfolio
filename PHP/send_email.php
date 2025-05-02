@@ -1,6 +1,6 @@
 <?php
 // Vérifier si le formulaire a été soumis
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Récupérer les données du formulaire
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
