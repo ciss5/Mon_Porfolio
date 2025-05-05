@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: #fff;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.containerObjectif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    padding: 50px 30px;
+    max-width: 700px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.15);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.lead {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #d1d1d1;
+    font-size: 1.05rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #30cfd0, #330867);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
